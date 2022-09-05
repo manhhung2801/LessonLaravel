@@ -1,8 +1,6 @@
-###1. Open command line tool and cd to root folder to run command to start docker
 
-    docker-compose up -d
 
-###2. Create .env from .env.example file, then input info for connect database
+###1. Create .env from .env.example file, then input info for connect database
 
     DB_CONNECTION=mysql
     DB_HOST=mysql
@@ -11,6 +9,9 @@
     DB_USERNAME=sail
     DB_PASSWORD=password
 
+###2. Open command line tool and cd to root folder to run command to start docker
+
+    docker-compose up -d
 
 ###3. Use a tool phpmyadmin/datagrip to connect database with info above
 
