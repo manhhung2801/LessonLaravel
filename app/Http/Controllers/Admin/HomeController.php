@@ -11,4 +11,9 @@ class HomeController extends Controller
     public function index(){
           return view('admin.admin_home');
     }
+
+    public function logout(){
+        Auth::guard('admin')->logout();
+        return redirect()->route('admin.login');
+    }
 }
